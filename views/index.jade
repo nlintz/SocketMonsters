@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div
+    b USERS
+    div#users
+  div
+    div#conversation
+    input#data
+    input(type="button", value="send")#datasend
+  script(src="socket.io/socket.io.js")
+  script(src="javascripts/chat.js")
