@@ -29,8 +29,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/game', game.index)
+app.get('/', game.index);
+app.get('/chat', routes.index)
 
 var server = http.createServer(app)
 
